@@ -10,7 +10,8 @@ author: kev
 
 I just started my first work as SOC Analyst back in march 2025. When I first started, my manager asking me to install and play around with Elasticsearch. An application that I never heard before. My first thought is just "meh, it's just another apps, what could be so difficult about it". 
 
-
+![Desktop View](/assets/img/posts/2025-04-11-elastic-self-managed-installation/how-do-we-tell-him-mr-krabs.jpg){: width="500"}
+_Basically What My Experience Looks like_
 
 Oh boy was I so wrong. Elastic is a giant to learn in itself, so much of features, processes and many other that I should learn from the scratch. So in this post, I would like to begin with how I setting up my Elasticsearch. Hope you guys learn something from this post.
 
