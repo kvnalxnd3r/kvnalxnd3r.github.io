@@ -3,7 +3,7 @@ title: Detecting Windows Logon Events 4624-4625 With Elasticsearch As a SIEM
 date: 2025-04-12 13:40 +0700
 categories: [Monitoring, Tutorial, Threat Detection]
 tags: [elasticsearch, siem, windows, security events, detection]
-author: kev
+author: Kevin Alexander
 ---
 
 ## Detecting My First Event
