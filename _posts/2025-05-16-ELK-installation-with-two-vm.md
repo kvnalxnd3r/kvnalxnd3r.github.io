@@ -3,7 +3,6 @@ title: ELK Installation With Two VMs For Home Lab
 date: 2025-05-20 13:21 +0700
 categories: [Tutorial, SIEM, ELK Stack]
 tags: [elasticsearch, siem, windows, linux, virtualbox]
-author: Kevin Alexander
 ---
 
 ## Before We Start
