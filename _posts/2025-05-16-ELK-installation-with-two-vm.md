@@ -49,7 +49,7 @@ Elasticsearch is to search, analyze, and process all of the data that being coll
 
 And with that explanation in mind, we then could utilize ELK stack as a SIEM to monitor our system. For the system of this lab, I will explain it with the diagram below to better understand the context of what it looks like:
 
-![Desktop View](assets/img/posts/fixed_tutor_0.1/installation-procedures/siem-diagram.png){: width="500"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/siem-diagram.png){: width="500"}
 _Here's a simple diagram to illustrate our lab_
 
 I admit, it's not fancy but for me it could convey what our lab will look like and this is as far as my understanding of the lab. But if you want a more detailed overview of the diagram, head to [William Nissler guide](https://www.leveleffect.com/blog/how-to-set-up-your-own-home-lab-with-elk) he got to more detailed about it. So from that diagram, we want to install ELK stack on the ubuntu server with the listed ports and that port will be attached to the DHCP IP.
