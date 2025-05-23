@@ -49,7 +49,7 @@ Elasticsearch is to search, analyze, and process all of the data that being coll
 
 And with that explanation in mind, we then could utilize ELK stack as a SIEM to monitor our system. For the system of this lab, I will explain it with the diagram below to better understand the context of what it looks like:
 
-![Desktop View](assets\img\posts\fixed_tutor_0.1\installation-procedures\siem-diagram.png){: width="500"}
+![Desktop View](assets/img/posts/fixed_tutor_0.1/installation-procedures/siem-diagram.png){: width="500"}
 _Here's a simple diagram to illustrate our lab_
 
 I admit, it's not fancy but for me it could convey what our lab will look like and this is as far as my understanding of the lab. But if you want a more detailed overview of the diagram, head to [William Nissler guide](https://www.leveleffect.com/blog/how-to-set-up-your-own-home-lab-with-elk) he got to more detailed about it. So from that diagram, we want to install ELK stack on the ubuntu server with the listed ports and that port will be attached to the DHCP IP.
@@ -74,38 +74,38 @@ And if we done choosing the version, here's some requirement for the Ubuntu VM:
 I go with the requirement above because it suits my need and my hardware capability but if guys want to tweak some of the requirement then go ahead. With that being said, the steps for installing Ubuntu server is as follows:
 1. Download it from the [official Ubuntu server website](https://releases.ubuntu.com/18.04.6/ubuntu-18.04.6-live-server-amd64.iso).
 2. After done downloading it, we then open VirtualBox and click **Machine** menu and select __New...__.
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\new-machine.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/new-machine.png){: width="800"}
 _Selecting Machine To Create New VM_
 3. It will then having **Create Virtual Machine** pop up, with it we could configure and set the properties of the VM. Just put the machine hardware just like our hardware requirement previously. One thing to note here is that, I checked the **Skip Unattended Installation** because if we want to use unattended installation that mean VirtualBox will handles the installation based on the provided setting and in this case we want to configure it manually.
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\create-virtual-machine-menu.png){: width="700"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/create-virtual-machine-menu.png){: width="700"}
 _Configuring VM Hardware_
 4. Next, the VM will appear on the VirtualBox menu manager, select that and click on **Start** icon to start the VM installation.
 5. The VM starting and next thing is to select language, select whatever language that suits you but in this case I choose english for obvious reason.
 6. The language set is done, now we will greeted by Ubuntu Server version notification. For our case, just select **Continue without updating**
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\ubuntu-version-update-notification.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/ubuntu-version-update-notification.png){: width="800"}
 _Skipping Version Update Selection_
 7. Here, there will be IP that we got from DHCP, note it because this is important for basically every next configuration.
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\receiving-dhcp-ip-from-nat-network.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/receiving-dhcp-ip-from-nat-network.png){: width="800"}
 _Receiving IP DHCP_
 8. If being asked to choose proxy on the next step, just skip it because we don't need it.
 9. Also just go with the default mirror link. Basically this is just Ubuntu asking for sources to download its dependencies and packages.
 10. The next menu is storage partition. For me personally I'll just go with the default but feel free if you guys want to get creative with it.
 11. Okay, next is configuring username and password for the Ubuntu. Remember also to make password that easy to remember but also not too easy to guess(it will be used a lot in the next steps). For this section, I'll configure it like shown below but then again, feel free just go with something you guys want.
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\ubuntu-username-and-password.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/ubuntu-username-and-password.png){: width="800"}
 _Creating Account For Ubuntu_
 12. The account has made, we then continue to enabling SSH for this Ubuntu.
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\enabling-ssh.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/enabling-ssh.png){: width="800"}
 _Selecting Enable SSH_
 13. All of that has been done then we wait for the installation to finish. It will somewhat look like this or similar.
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\first-look-of-linux-vbox.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/first-look-of-linux-vbox.png){: width="800"}
 _Ubuntu Server Successfully Installed_
 
 Now with the installation complete I'll add one more important thing to do before we proceed further. **I want you guys make snapshot for each section of this guide**. Yep, this will serve as a failsafe incase something went wrong, making it "point of return" for us(yes pun intended). Here's how to do it:
 - Click on **Machine** menu again and select **Take Snapshot...**
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\making-first-snapshot.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/making-first-snapshot.png){: width="800"}
 _Selecting Take Snapshot_
 - After that there will be menu pop that want us to name the snapshot. The name will function as a description for what exactly is this snapshot that we make. So make sure the name and description is informative about what machine situation when the snapshot being made. 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\finish-apt-update.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/finish-apt-update.png){: width="800"}
 _Making Snapshot Name and Description_
 
 And with that our Ubuntu Server is done we could continue to next step, that is updating our Ubuntu with this commands. But we need to login to our Ubuntu. After done login, execute these steps:
@@ -126,7 +126,7 @@ With all of that being done, our Ubuntu is ready. Oh, and don't forget to make s
 This section will focusing on SSH thingies, starting from checking it's status, setting up NAT rules, and many more. I recommend using SSH to simulate remote connection within work environment and to avoid hassle of interacting directly with the VirtualBox(yes, it's such a pain in the ass). But first thing first, login to the Ubuntu VM and execute this steps:
 
 1. First, we have to check our Ubuntu SSH status. There's some possibilities here, either our SSH is working or not. Let's make sure of it with this command, ```sudo systemctl status ssh```. On my case, the SSH is **Active and running** like shown below.
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\checking-SSH-status.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/checking-SSH-status.png){: width="800"}
 _Making Snapshot Name and Description_
 
 This is because we **enabling SSH** previously during our installation but in case if some of you guys seeing **failed or dead status** proceed to next steps. 
@@ -138,19 +138,19 @@ This is because we **enabling SSH** previously during our installation but in ca
 Even with all of that progress previously, we still couldn't even access the VM directly by their IP, nuh uh that would be too convenient. Welcome to IT world, where if it's not pain in the ass you should suspect somethings wrong. So how do we SSH the VM then? well let's get into it:
 
 1. First head to our VirtualBox Manager menu and select the network option shown below.
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\selecting-network-menu-on-virtualbox-manager-menu.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/selecting-network-menu-on-virtualbox-manager-menu.png){: width="800"}
 _Selecting Network Menu_
 2. After that there will be network menu, in it select **NAT Network** tab and click on **Create** icon to create new NAT Networks option.
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\setting-ssh-forwarding-rules.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/setting-ssh-forwarding-rules.png){: width="800"}
 _Configuring NAT Network_
 From the image above, we basically configuring our NAT Network to named "ElasticNetwork" to the network IP within prefix of 192.168.68.0/24 with DHCP server enabled. Below it, we could see there's **Port Forwaring** tab where you could add by clicking on the green plus icon and set it's name, the protocol which is TCP for SSH, host IP being left blank because we want it to be able receiving any IP other from the prefix range, the host port, guest IP with our own Ubuntu IP previously, and lastly the guest port being 22.
 
 3. Next is to set our network mode for our Ubuntu VM, again we head to ``Machine`` > ``Settings`` on our VM windows and after that select **Network** like shown below.
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\selecting-network-mode.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/selecting-network-mode.png){: width="800"}
 _Setting Ubuntu Network Configuration_
 Change the **Attached to** with **NAT Network**, name change it with the network that we make, and lastly I set the **Promiscous Mode** to **Allow All**. That make sure it could capture all traffic because well, this is a SIEM lab.
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\ssh-to-vm.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/ssh-to-vm.png){: width="800"}
 _Successfully SSH To Ubuntu VM_
 
 Now all of that done, finally we are able to SSH to the VM and maybe some of you wondering why the IP is ``127.0.0.1`` and not ``192.168.68.5``? Well according to the guides that I read, this is possible because the port forwarding rules that we set before that allowing all IP to access SSH to Ubuntu VM through ``port 2222`` which then being redirected to ``port 22``. And ``127.0.0.1`` itself is another way of saying **localhost**. I've tried to access it with IP ``192.168.68.5`` but there's no connection, I still dunno why is that happen even though I've tried to add rules for it`¯\_(ツ)_/¯`. But oh well, maybe I'm just that _noob_. Oh and don't forget to make snapshot 📷.
@@ -165,7 +165,7 @@ But before we start downloading Elasticsearch, execute this command ``sudo apt i
 
 Okay, below is screenshot and steps for Elasticsearch installation:
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\downloading-elasticsearch.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/downloading-elasticsearch.png){: width="800"}
 _Successfully Downloading Elasticsearch_
 
 1. First we download GPG key for the Elasticsearch with command ``wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -``
@@ -173,7 +173,7 @@ _Successfully Downloading Elasticsearch_
 3. Now, with all of that done we could update and install Elasticsearch ``sudo apt update -y && sudo apt install elasticsearch -y``
 
 Done and with that we could see the status of Elasticsearch service just like SSH previously with command ``sudo systemctl status elasticsearch.service``.
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\elastic-systemctl-status.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/elastic-systemctl-status.png){: width="800"}
 _Checking Elasticsearch Service Status_
 As you can see, the status is dead and that is because still haven't enabling the service yet, that will be done on the next section.
 
@@ -184,9 +184,9 @@ Before we enabling and running the service, let's configure Elasticsearch first 
 We could do that by entering command ``sudo nano /etc/elasticsearch/elasticsearch.yml``. Let me explain a bit that command, basically we accessing elasticsearch.yml with super user privilege, then choosing our text editor for mine it's **nano** but you could choose other text editor, and lastly we specifying the filepath of elasticsearch.yml to be able to open it.
 
 After that done, you should see the text editor open up and you could start changing the properties such as shown below:
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\changing-elasticsearchyml.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/changing-elasticsearchyml.png){: width="800"}
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\changing-elasticsearchyml-network-and-discovery-type.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/changing-elasticsearchyml-network-and-discovery-type.png){: width="800"}
 _Changing Elasticsearch Properties_
 What we're changing here is:
 1. ``cluster.name`` to our own wanted name.
@@ -196,7 +196,7 @@ What we're changing here is:
 
 With this we then could do these following steps:
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\testing-elasticsearch-connection.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/testing-elasticsearch-connection.png){: width="800"}
 _Enabling Elasticsearch Service And Testing It's Connection_
 
 1. We first enable the service with ``sudo systemctl enable elasticsearch``.
@@ -208,12 +208,12 @@ _Enabling Elasticsearch Service And Testing It's Connection_
 
 Now, we do the same with Kibana, take a look this screenshot below.
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\install-and-configure-kibanayml.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/install-and-configure-kibanayml.png){: width="800"}
 _Successfully Installing Kibana_
 
 Enter command ``sudo apt install kibana -y`` and wait for it to finish the process. After that we edit the Kibana YML configuration, enter command ``sudo nano /etc/kibana/kibana.yml`` disclaimer again, **nano** is my text editor choice.
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\set-kibanayml-properties.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/set-kibanayml-properties.png){: width="800"}
 _Changing Kibana YML Properties_
 
 In here, we change:
@@ -221,12 +221,12 @@ In here, we change:
 2. ``server.host``, change it again to your own IP.
 3. ``server.name``, change it to your desire.
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\change-kibanayml-authentication-cred.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/change-kibanayml-authentication-cred.png){: width="800"}
 _Kibana Credentials_
 
 As for Kibana credentials, we just leave it for now. We will back to it in the later steps. And with that, let's continue next step that is enabling Kibana service.
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\enabling-and-starting-kibana-services.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/enabling-and-starting-kibana-services.png){: width="800"}
 _Enabling Kibana Service_
 
 1. We always start with enabling service first, ``sudo systemctl enable elasticsearch``.
@@ -239,7 +239,7 @@ And that's it, we finally installed Elasticsearch and Kibana. You could also che
 
 This section is for those who are done for the day of configuring this lab and want to take a rest or any other task. If you want to stop, you have to shutdown all of the component properly, here's how you do it.
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\correct-way-of-stopping-services.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/correct-way-of-stopping-services.png){: width="800"}
 _Shutting Down System Properly_
 
 The command used is in order, so first it's ``sudo systemctl stop kibana`` and the second is ``sudo systemctl stop elasticsearch``. This way we could safely shut down our system without worrying the risk to break anything. And another note, ``kibana.service`` == ``kibana`` && ``elasticsearch.service`` == ``elastic``.
@@ -256,11 +256,11 @@ Inside ``filebeat.yml`` file we could adjust and change variety of input receive
 
 What you have to edit in the ``filebeat.yml`` is as follows
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\change-outputelastic-properties.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/change-outputelastic-properties.png){: width="800"}
 _Changing Filebeat Hosts_
 We change that to our own IP that attached to Elasticsearch port 9200. And the next thing to is shown in screenshot below.
 
-![Desktop View](assets\img\posts\2025-05-20-sELK-installation-with-two-vm\disabling-logstash-and-testing-filebeat-connection.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/disabling-logstash-and-testing-filebeat-connection.png){: width="800"}
 _Disabling Logstash And Checking The Connection To Elastic_
 According to the guides that I follows, this is to disable Logstash and to ensure Filebeat correctly connected to Elasticsearch. We use ``sudo filebeat setup --index-management -E output.logstash.enabled=false 'output.elasticsearch.hosts=["YOUR_OWN_IP:9200"]'``. 
 
@@ -289,19 +289,19 @@ The IP inserted there is for fleet service able to reach out to it and make CA c
 
 So next is to generate and create other certificates as well, head to ``cd /usr/share/elasticsearch`` and we enter command ``sudo /usr/share/elasticsearch/bin/elasticsearch-certutil ca --pem``. That basically mean we using executable file that generate the certs itself, and the encryption format of are X.509. Which is a public key certificates used in TLS/SSL, and HTTPS as well to secure the web, more about that can be found [here](https://en.wikipedia.org/wiki/X.509). As for the [``--pem``](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) itself, it's a standard file format of storing and sending encrypted key and certificate. And with that, we will get output as follows:
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\creating-ca-and-unzip-ca.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/creating-ca-and-unzip-ca.png){: width="800"}
 _CA Certificates Output_
 
 One more thing to know based on that output is that, we using the ``instances.yml`` that made previously to help us generate these certificates. And we compressing it in zip file format, as for the file name I choose to name it ``elastic-stack-cat.zip`` but you can choose whatever name convenient to you.
 
 Nicely done, next steps is to put use of these certificates by using it to generate private key and another certificates. Use this command ``sudo /usr/share/elasticsearch/bin/elasticsearch-certutil cert --ca-cert ca/ca.crt --ca-key ca/ca.key --pem --in instances.yml --out cert.zip``. Follow the screenshot below.
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\private-key-output.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/private-key-output.png){: width="800"}
 _Generating Private Keys_
 
 I'll go with ``cert.zip`` as the name but and I we also need to unzipping this file too. And after that we need to use command ``sudo unzip elastic-stack-ca.zip`` to unzipping it.
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\unzipping-ca-cert-and-making-dir-certs.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/unzipping-ca-cert-and-making-dir-certs.png){: width="800"}
 _Unzipping Cert And Making Directory Cert_
 
 Notice that Linux making it's own directory after unzipping it, because of that the next thing is to move all of those certificates to our newly created directory. We make directory to store all those certificates with ``sudo mkdir certs``, after the directory created use ``sudo mv /usr/share/elasticsearch/elasticsearch/* certs/`` first, then ``sudo mv /usr/share/elasticsearch/kibana/* certs/``, lastly ``sudo mv /usr/share/elasticsearch/fleet/* certs/``. After the copying steps done, we then use ``sudo mkdir -p /etc/elasticsearch/certs/ca && sudo mkdir -p /etc/kibana/certs/ca && sudo mkdir -p /etc/fleet/certs/ca`` to make CA own directory just like screenshot below where we could store our CA certificates.
@@ -311,7 +311,7 @@ The CA directory has been made, now we copy CA certs and other certificates to t
 - ``sudo cp certs/elasticsearch.* /etc/elasticsearch/certs/ && sudo cp certs/kibana.* /etc/kibana/certs/ && sudo cp certs/fleet.* /etc/fleet/certs/``
 
 I used list command to check the directory and noticing that there's still certs directories left around. So lastly just like mom used to say, clean up after playing with your toy and like a good kid we are we clean up our mess with ``sudo rm -r elasticsearch/ kibana/ fleet/``
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\copy-private-key-and-ca-with-clean-up.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/copy-private-key-and-ca-with-clean-up.png){: width="800"}
 _Moving The Certificates Files_
 
 
@@ -326,7 +326,7 @@ And this also correlate with our usage of sudo command where we want the least p
 - ``sudo chown -R elasticsearch:elasticsearch /etc/elasticsearch/certs/ca``
 The first command let us set the ``elasticsearch`` directory to **Elasticsearch** and also change its group to ``elasticsearch`` that helps us limit permission to again, **Elasticsearch**. Second command is doing the same thing but for ``ca`` directory.
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\best-practice-for-siem-deployment.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/best-practice-for-siem-deployment.png){: width="800"}
 _Best Practice SIEM Deployment_
 
 Based on that screen there's couple of command flag that I want to explain to the best of my understanding. ``-in`` flag used to specifying the certificate to check out, ``-text`` to make the output in readable format and lastly ``-noout`` is basically minimizing the gibberish encoded message to help further making it more readable.
@@ -352,7 +352,7 @@ xpack.encryptedSavedObjects.encryptionKey: "min-32-byte-long-strong-encryption-k
 ```
 Remember to change ``YOUR_OWN_IP`` to your own IP and also some of you might notice that I input ``10.0.2.15`` as the IP right? Well that just me being dumbo and you will see what happen when you don't correctly set the IP in the next section. And all of These properties is all within the ``kibana.yml`` but it will be pain in the ass to search each of it and editing them so yeah, just copy that. And it will look like this.
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\configuring-kibana-ssl-https.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/configuring-kibana-ssl-https.png){: width="800"}
 _Configuring Kibana SSL_
 
 The properties here somewhat self explanatory, the public base URL is our Kibana address, and others is for our encryption thingies.  But albeit, I agree with nubb here, I was also confused when first time handling the certificates and encryption stuff of ELK stack. But basically it's just how Kibana telling Elastic that the communication between them is secured with various encrypted certificates and that Kibana make sure, it is trusted Kibana that talking with Elasticsearch. 
@@ -376,7 +376,7 @@ xpack.security.http.ssl.certificate: /etc/elasticsearch/certs/elasticsearch.crt
 xpack.security.http.ssl.certificate_authorities: ["/etc/elasticsearch/certs/ca/ca.crt"]
 ```
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\configuring-elasticsearch-ssl-https.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/configuring-elasticsearch-ssl-https.png){: width="800"}
 _Configuring Elasticsearch SSL_
 
 I'll leave the [official documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-settings.html#token-service-settings) for you to read more information and nubb explanation about this SSL things. And I agree again with nubb here, are the Elastic devs high on something when making the script to not use quotation for file path? Only God and them knows why.
@@ -387,7 +387,7 @@ With that said and done, we have to ``sudo systemctl restart elasticsearch`` and
 
 Now let's what all of these headache got us. Execute the command ``curl --get https://YOUR_OWN_IP:9200``.
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\testing-elasticsearch-connection.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/testing-elasticsearch-connection.png){: width="800"}
 _Testing Connections_
 
 Notice that it failed for the first time? Yeah, like I said, if it's too good to be true in IT, chances are you missing something. Apparently the reason for the failed testing is because while the Kibana and Elasticsearch trust each other, the browser is don't. 
@@ -398,7 +398,7 @@ Kinda like when you bring your other friend to your other friend, of course they
 
 Now one more thing before we see ELK stack frontend, we have to generate credential in order to login to ELK stack. Here's the command ``sudo /usr/share/elasticsearch/bin/elasticsearch-setup-passwords auto`` and basically this means we let the Elastic generate it for us. All the information about it can be found [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-passwords.html). Here's what it will look like
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\generating-credential-for-elastic.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/generating-credential-for-elastic.png){: width="800"}
 _Generated Credentials_
 
 And don't forget to save all of that credentials, oh and also **don't change the ``elastic.username``** it's for superuser and it basically the core user of ELK. Changing it will make ELK stack error.
@@ -411,31 +411,31 @@ Now we ready to login ELK stack and using it. But before that, don't forget to t
 
 Oh and if you just start again don't forget to start the ELK stacks. I'll explain it further but take a look this screenshot.
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\our-first-kibana-logging-in.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/our-first-kibana-logging-in.png){: width="800"}
 _Let The Browser Trust The Connection_
 
 The browser showing that because it still don't trust the ELK stack connection yet and warning us. But we know this is a trusted connection and let the browser know that by clicking **Advanced...** and **Accept the Risk and Continue**
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\kibana-server-is-not-ready-yet.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/kibana-server-is-not-ready-yet.png){: width="800"}
 _Kibana Server Not Ready Yet_
 
-Interesting that we access it with ``https://127.0.0.1:5601`` but not with ``YOUR_OWN_IP``. Why is that? Well, that is because the ELK stack hosted on your own IP but not accessible publicly, that is why accessing it locally with ``127.0.0.1``. And what's that `not ready yet` message? Welp, just like the name suggested, the system is indeed not ready yet, maybe warm up or smth `¯\_(ツ)_/¯`.
+Interesting that we access it with ``https://127.0.0.1:5601`` but not with ``YOUR_OWN_IP``. Why is that? Well, that is because the ELK stack hosted on your own IP but not accessible publicly, that is why accessing it locally with ``127.0.0.1``. And what's that `not ready yet` message? Welp, just like the name suggested, the system is indeed not ready yet, maybe warm up or smth `¯/_(ツ)_/¯`.
 
 We a bit and..... voilà, the ELK stack front ladies and gentlemen. Phew... that was long journey huh? Nicely done guys. 
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\voila-the kibana is-ready.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/voila-the kibana is-ready.png){: width="800"}
 _ELK Stack Finally Able To Use_
 
 ## What's About the Wrong IP Before?
 
 This last section is to explanation the silliness that made previously by entering wrong IP. Basically what will happen is that ELK stack will infinitely on **Not Ready Yet** status and to fix it?
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\kibana-server-is-not-ready-yet.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/kibana-server-is-not-ready-yet.png){: width="800"}
 _Infinite Kibana Server Not Ready Yet_
 
 To fix it we have to change it back to your correct IP in ``kibana.yml`` like shown in the picture below.
 
-![Desktop View](assets\img\posts\2025-05-20-ELK-installation-with-two-vm\if-youre-not-a-dumbo-change-the-goddamn-ip.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/if-youre-not-a-dumbo-change-the-goddamn-ip.png){: width="800"}
 _Change that 10.0.2.15 With Your Own Ip_
 
 And that `10.0.2.15` needed to be change to your own IP. With that, you finally fixing the **Not Ready Yet** status.
