@@ -3,7 +3,6 @@ title: Elastic Self-managed Installation
 date: 2025-04-11 16:25 +0700
 categories: [Tutorial, SIEM, ELK Stack]
 tags: [elasticsearch, siem, blog, itsecurity]
-author: Kevin Alexander
 ---
 
 ## What Makes Me Start
