@@ -321,7 +321,7 @@ Also don't forget to take snapshot 📷 hehehehe.
 This section is for us to implement best practice when we deploying SIEM is to have least privilege within our systems and according nubb, the PrintNightmare threat is still lurking rampant out there so gotta be careful. More about that you could read [here](https://www.sygnia.co/threat-reports-and-advisories/demystifying-the-print-nightmare-vulnerability/).
 
 And this also correlate with our usage of sudo command where we want the least privilege. With that in mind, head to ``cd /usr/share`` and execute commands:
-- ``sudo chown -R elasticsearch:elasticsearch elasticsearch/, which will 1) Recursively set the ownership of the elasticsearch``
+- ``sudo chown -R elasticsearch:elasticsearch elasticsearch/``,  which will recursively set the ownership of the elasticsearch.
 - ``sudo chown -R elasticsearch:elasticsearch /etc/elasticsearch/certs/ca``
 The first command let us set the ``elasticsearch`` directory to **Elasticsearch** and also change its group to ``elasticsearch`` that helps us limit permission to again, **Elasticsearch**. Second command is doing the same thing but for ``ca`` directory.
 
