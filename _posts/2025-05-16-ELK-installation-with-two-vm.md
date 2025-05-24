@@ -386,7 +386,7 @@ With that said and done, we have to ``sudo systemctl restart elasticsearch`` and
 
 Now let's what all of these headache got us. Execute the command ``curl --get https://YOUR_OWN_IP:9200``.
 
-![Desktop View](assets/img/posts/testing-curl-for-https-and-ssl-with-insecure-flag.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/testing-curl-for-https-and-ssl-with-insecure-flag.png){: width="800"}
 _Testing Connections_
 
 Notice that it failed for the first time? Yeah, like I said, if it's too good to be true in IT, chances are you missing something. Apparently the reason for the failed testing is because while the Kibana and Elasticsearch trust each other, the browser is don't. 
