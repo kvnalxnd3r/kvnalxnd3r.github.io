@@ -406,6 +406,15 @@ Now with all of that restart the ELK stack with ``sudo systemctl restart kibana 
 
 Now we ready to login ELK stack and using it. But before that, don't forget to take snapshot 📷.
 
+## Rule Forwarding For ELK 
+
+One last setting that we need to set before connecting to ELK stack is to add another port forwarding rules but this time for the connection to ELK stack. For the sake of simplicity, here's the step below.
+
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/make-elastic-connection-forwarding-rules.png){: width="800"}
+_Adding ELK Connection In Port Forwarding Rule_
+
+To add the rule above, we head to ``Virtual Box Manager`` just like previously we add SSH rule and then select ``Network`` > ``NAT Network`` > select ``Port Forwarding`` tab > and click on the green plus icon. Just like that, we add the rule just like shown picture above. Finally, with this we could connecting to the ELK stack.
+
 ## Moment of Truth
 
 Oh and if you just start again don't forget to start the ELK stacks. I'll explain it further but take a look this screenshot.
