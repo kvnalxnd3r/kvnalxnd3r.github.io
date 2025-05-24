@@ -228,9 +228,9 @@ As for Kibana credentials, we just leave it for now. We will back to it in the l
 ![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/enabling-and-starting-kibana-services.png){: width="800"}
 _Enabling Kibana Service_
 
-1. We always start with enabling service first, ``sudo systemctl enable elasticsearch``.
-2. Then start it's service ``sudo systemctl start elasticsearch``.
-3. And finally checking it's status with ``sudo systemctl status elasticsearch``.
+1. We always start with enabling service first, ``sudo systemctl enable kibana``.
+2. Then start it's service ``sudo systemctl start kibana``.
+3. And finally checking it's status with ``sudo systemctl status kibana``.
 
 And that's it, we finally installed Elasticsearch and Kibana. You could also checking Elasticsearch and Kibana status both at the same time with ``sudo systemctl status elasticsearch && sudo systemctl status kibana``. And as always don't forget to take snapshot 📷.
 
