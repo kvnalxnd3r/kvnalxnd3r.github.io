@@ -291,14 +291,14 @@ So next is to generate and create other certificates as well, head to ``cd /usr/
 ![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/creating-ca-and-unzip-ca.png){: width="800"}
 _CA Certificates Output_
 
-One more thing to know based on that output is that, we using the ``instances.yml`` that made previously to help us generate these certificates. And we compressing it in zip file format, as for the file name I choose to name it ``elastic-stack-cat.zip`` but you can choose whatever name convenient to you.
+One more thing to know based on that output is that, we using the ``instances.yml`` that made previously to help us generate these certificates. And we compressing it in zip file format, as for the file name I choose to name it ``elastic-stack-cat.zip`` but you can choose whatever name convenient to you. With it, we enter ``sudo unzip elastic-stack-ca.zip`` to unzipping the file.
 
 Nicely done, next steps is to put use of these certificates by using it to generate private key and another certificates. Use this command ``sudo /usr/share/elasticsearch/bin/elasticsearch-certutil cert --ca-cert ca/ca.crt --ca-key ca/ca.key --pem --in instances.yml --out cert.zip``. Follow the screenshot below.
 
 ![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/private-key-output.png){: width="800"}
 _Generating Private Keys_
 
-I'll go with ``cert.zip`` as the name but and I we also need to unzipping this file too. And after that we need to use command ``sudo unzip elastic-stack-ca.zip`` to unzipping it.
+I'll go with ``cert.zip`` as the name but and I we also need to unzipping this file too. And after that we need to use command ``sudo unzip cert.zip`` to unzipping it.
 
 ![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/unzipping-ca-cert-and-making-dir-certs.png){: width="800"}
 _Unzipping Cert And Making Directory Cert_
