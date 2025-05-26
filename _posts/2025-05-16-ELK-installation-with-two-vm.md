@@ -400,7 +400,7 @@ Now one more thing before we see ELK stack frontend, we have to generate credent
 ![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/generating-credential-for-elastic.png){: width="800"}
 _Generated Credentials_
 
-And don't forget to save all of that credentials, oh and also **don't change the ``elastic.username``** it's for superuser and it basically the core user of ELK. Changing it will make ELK stack error.
+And don't forget to save all of that credentials, oh and also **don't change the ``elastic.username`` but instead change password of it to the generated password previously. The ELK stack will stuck on endless loop if you don't change those two properties**. The ``elastic`` username used for superuser and it basically the core user of ELK. Changing it will make ELK stack error.
 
 Now with all of that restart the ELK stack with ``sudo systemctl restart kibana && sudo systemctl restart elasticsearch``.
 
