@@ -291,7 +291,7 @@ So next is to generate and create other certificates as well, head to ``cd /usr/
 ![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/creating-ca-and-unzip-ca.png){: width="800"}
 _CA Certificates Output_
 
-One more thing to know based on that output is that, we using the ``instances.yml`` that made previously to help us generate these certificates. And we compressing it in zip file format, as for the file name I choose to name it ``elastic-stack-cat.zip`` but you can choose whatever name convenient to you. With it, we enter ``sudo unzip elastic-stack-ca.zip`` to unzipping the file.
+One more thing to know based on that output, we using the ``instances.yml`` that made previously to help us generate these certificates. And we compressing it in zip file format, as for the file name I choose to name it ``elastic-stack-cat.zip`` but you can choose whatever name convenient to you. With it, we enter ``sudo unzip elastic-stack-ca.zip`` to unzipping the file.
 
 Nicely done, next steps is to put use of these certificates by using it to generate private key and another certificates. Use this command ``sudo /usr/share/elasticsearch/bin/elasticsearch-certutil cert --ca-cert ca/ca.crt --ca-key ca/ca.key --pem --in instances.yml --out cert.zip``. Follow the screenshot below.
 
@@ -328,7 +328,7 @@ The first command let us set the ``elasticsearch`` directory to **Elasticsearch*
 ![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/best-practice-for-siem-deployment.png){: width="800"}
 _Best Practice SIEM Deployment_
 
-Based on that screen there's couple of command flag that I want to explain to the best of my understanding. ``-in`` flag used to specifying the certificate to check out, ``-text`` to make the output in readable format and lastly ``-noout`` is basically minimizing the gibberish encoded message to help further making it more readable.
+Based on that screenshot, the command being used is ``sudo openssl x509 -in /etc/elasticsearch/certs/elasticsearch.crt -text -noout``. Where there's couple of command flag that I want to explain to the best of my understanding. ``-in`` flag used to specifying the certificate to check out, ``-text`` to make the output in readable format and lastly ``-noout`` is basically minimizing the gibberish encoded message to help further making it more readable.
 
 ## Setting Up HTTPS Connection With the Certificates
 
