@@ -7,7 +7,7 @@ tags: [elasticsearch, siem, windows, fleet server, elastic agent, endpoint]
 
 ## A Little Reminder
 
-**This is part two**, continuation from [my post](https://kvnalxnd3r.github.io/posts/ELK-installation-with-two-vm/) where we walk through installing ELK stack SIEM. On this part two, we will take a look at how to integrating our ELK stack with endpoint, in this case is a Windows VM. 
+**This is part two**, continuation from my post where we walk through installing ELK stack SIEM. On this part two, we will take a look at how to integrating our ELK stack with endpoint, in this case is a Windows VM. 
 
 We will learn also what is **Filebeat**, **Fleet Server**, **Elastic Agent**, **Elastic Integration**, and many more tools for getting our lab work as a complete eco system for **simulating SOC monitoring, log capturing, threat hunting, and maybe many more** in the future. Without further a do, let's get into it.
 
@@ -51,7 +51,7 @@ _Fleet Server Page_
 
 Fleet server is need some time to load but once its done, click on **Add Fleet Server** button, it will then navigate us to this page where we could download Fleet Server installer. 
 
-Screenshot below shows us that we first need to download the file, for next is to set the ELK stack to **Production** mode because we have our own certificates that we generated on [previous tutorial]((https://kvnalxnd3r.github.io/posts/ELK-installation-with-two-vm/)). And on the fourth steps, we specified the location of where we want to attached our Fleet server host. In here, I insert the address of our Ubuntu Server machine and put it in port ``8220`` and then click 
+Screenshot below shows us that we first need to download the file, for next is to set the ELK stack to **Production** mode because we have our own certificates that we generated on previous tutorial. And on the fourth steps, we specified the location of where we want to attached our Fleet server host. In here, I insert the address of our Ubuntu Server machine and put it in port ``8220`` and then click 
 
 ![Desktop View](assets/img/posts/2025-05-23-integrating-fleet-server-and-preparing-windows-vm/adding-fleet-server-host.png){: width="800"}
 _Adding Fleet Server_
