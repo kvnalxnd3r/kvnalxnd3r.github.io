@@ -228,9 +228,9 @@ As for Kibana credentials, we just leave it for now. We will back to it in the l
 ![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/enabling-and-starting-kibana-services.png){: width="800"}
 _Enabling Kibana Service_
 
-1. We always start with enabling service first, ``sudo systemctl enable elasticsearch``.
-2. Then start it's service ``sudo systemctl start elasticsearch``.
-3. And finally checking it's status with ``sudo systemctl status elasticsearch``.
+1. We always start with enabling service first, ``sudo systemctl enable kibana``.
+2. Then start it's service ``sudo systemctl start kibana``.
+3. And finally checking it's status with ``sudo systemctl status kibana``.
 
 And that's it, we finally installed Elasticsearch and Kibana. You could also checking Elasticsearch and Kibana status both at the same time with ``sudo systemctl status elasticsearch && sudo systemctl status kibana``. And as always don't forget to take snapshot 📷.
 
@@ -291,14 +291,14 @@ So next is to generate and create other certificates as well, head to ``cd /usr/
 ![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/creating-ca-and-unzip-ca.png){: width="800"}
 _CA Certificates Output_
 
-One more thing to know based on that output is that, we using the ``instances.yml`` that made previously to help us generate these certificates. And we compressing it in zip file format, as for the file name I choose to name it ``elastic-stack-cat.zip`` but you can choose whatever name convenient to you.
+One more thing to know based on that output, we using the ``instances.yml`` that made previously to help us generate these certificates. And we compressing it in zip file format, as for the file name I choose to name it ``elastic-stack-cat.zip`` but you can choose whatever name convenient to you. With it, we enter ``sudo unzip elastic-stack-ca.zip`` to unzipping the file.
 
 Nicely done, next steps is to put use of these certificates by using it to generate private key and another certificates. Use this command ``sudo /usr/share/elasticsearch/bin/elasticsearch-certutil cert --ca-cert ca/ca.crt --ca-key ca/ca.key --pem --in instances.yml --out cert.zip``. Follow the screenshot below.
 
 ![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/private-key-output.png){: width="800"}
 _Generating Private Keys_
 
-I'll go with ``cert.zip`` as the name but and I we also need to unzipping this file too. And after that we need to use command ``sudo unzip elastic-stack-ca.zip`` to unzipping it.
+I'll go with ``cert.zip`` as the name but and I we also need to unzipping this file too. And after that we need to use command ``sudo unzip cert.zip`` to unzipping it.
 
 ![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/unzipping-ca-cert-and-making-dir-certs.png){: width="800"}
 _Unzipping Cert And Making Directory Cert_
@@ -321,14 +321,14 @@ Also don't forget to take snapshot 📷 hehehehe.
 This section is for us to implement best practice when we deploying SIEM is to have least privilege within our systems and according nubb, the PrintNightmare threat is still lurking rampant out there so gotta be careful. More about that you could read [here](https://www.sygnia.co/threat-reports-and-advisories/demystifying-the-print-nightmare-vulnerability/).
 
 And this also correlate with our usage of sudo command where we want the least privilege. With that in mind, head to ``cd /usr/share`` and execute commands:
-- ``sudo chown -R elasticsearch:elasticsearch elasticsearch/, which will 1) Recursively set the ownership of the elasticsearch``
+- ``sudo chown -R elasticsearch:elasticsearch elasticsearch/``,  which will recursively set the ownership of the elasticsearch.
 - ``sudo chown -R elasticsearch:elasticsearch /etc/elasticsearch/certs/ca``
 The first command let us set the ``elasticsearch`` directory to **Elasticsearch** and also change its group to ``elasticsearch`` that helps us limit permission to again, **Elasticsearch**. Second command is doing the same thing but for ``ca`` directory.
 
 ![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/best-practice-for-siem-deployment.png){: width="800"}
 _Best Practice SIEM Deployment_
 
-Based on that screen there's couple of command flag that I want to explain to the best of my understanding. ``-in`` flag used to specifying the certificate to check out, ``-text`` to make the output in readable format and lastly ``-noout`` is basically minimizing the gibberish encoded message to help further making it more readable.
+Based on that screenshot, the command being used is ``sudo openssl x509 -in /etc/elasticsearch/certs/elasticsearch.crt -text -noout``. Where there's couple of command flag that I want to explain to the best of my understanding. ``-in`` flag used to specifying the certificate to check out, ``-text`` to make the output in readable format and lastly ``-noout`` is basically minimizing the gibberish encoded message to help further making it more readable.
 
 ## Setting Up HTTPS Connection With the Certificates
 
@@ -386,7 +386,7 @@ With that said and done, we have to ``sudo systemctl restart elasticsearch`` and
 
 Now let's what all of these headache got us. Execute the command ``curl --get https://YOUR_OWN_IP:9200``.
 
-![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/testing-elasticsearch-connection.png){: width="800"}
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/testing-curl-for-https-and-ssl-with-insecure-flag.png){: width="800"}
 _Testing Connections_
 
 Notice that it failed for the first time? Yeah, like I said, if it's too good to be true in IT, chances are you missing something. Apparently the reason for the failed testing is because while the Kibana and Elasticsearch trust each other, the browser is don't. 
@@ -400,11 +400,20 @@ Now one more thing before we see ELK stack frontend, we have to generate credent
 ![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/generating-credential-for-elastic.png){: width="800"}
 _Generated Credentials_
 
-And don't forget to save all of that credentials, oh and also **don't change the ``elastic.username``** it's for superuser and it basically the core user of ELK. Changing it will make ELK stack error.
+And don't forget to save all of that credentials, oh and also **don't change the ``elastic.username`` but just change password of it to the generated password previously. The ELK stack will stuck on endless loop if you don't change those two properties**. The ``elastic`` username used for superuser and it basically the core user of ELK. Changing it will make ELK stack error.
 
 Now with all of that restart the ELK stack with ``sudo systemctl restart kibana && sudo systemctl restart elasticsearch``.
 
 Now we ready to login ELK stack and using it. But before that, don't forget to take snapshot 📷.
+
+## Rule Forwarding For ELK 
+
+One last setting that we need to set before connecting to ELK stack is to add another port forwarding rules but this time for the connection to ELK stack. For the sake of simplicity, here's the step below.
+
+![Desktop View](assets/img/posts/2025-05-20-ELK-installation-with-two-vm/make-elastic-connection-forwarding-rules.png){: width="800"}
+_Adding ELK Connection In Port Forwarding Rule_
+
+To add the rule above, we head to ``Virtual Box Manager`` just like previously we add SSH rule and then select ``Network`` > ``NAT Network`` > select ``Port Forwarding`` tab > and click on the green plus icon. Just like that, we add the rule just like shown picture above. Finally, with this we could connecting to the ELK stack.
 
 ## Moment of Truth
 
