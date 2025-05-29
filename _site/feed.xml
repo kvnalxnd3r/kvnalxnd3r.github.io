@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kevin Alexander</title>
   <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
-  <updated>2025-05-29T13:20:58+07:00</updated>
+  <updated>2025-05-29T15:28:51+07:00</updated>
   <author>
     <name>Kevin Alexander</name>
     <uri>http://localhost:4000/</uri>
@@ -20,25 +20,23 @@
 
   
   <entry>
-    <title>Attack Simulation, Red Atomic Team</title>
-    <link href="http://localhost:4000/posts/red-atomic-team-attack/" rel="alternate" type="text/html" title="Attack Simulation, Red Atomic Team" />
+    <title>Attack Simulation Using Atomic Red Team</title>
+    <link href="http://localhost:4000/posts/attack-simulation-using-atomic-red-team/" rel="alternate" type="text/html" title="Attack Simulation Using Atomic Red Team" />
     <published>2025-05-29T12:33:00+07:00</published>
   
-    <updated>2025-05-29T13:17:51+07:00</updated>
+    <updated>2025-05-29T12:33:00+07:00</updated>
   
-    <id>http://localhost:4000/posts/red-atomic-team-attack/</id>
-    <content type="text/html" src="http://localhost:4000/posts/red-atomic-team-attack/" />
+    <id>http://localhost:4000/posts/attack-simulation-using-atomic-red-team/</id>
+    <content type="text/html" src="http://localhost:4000/posts/attack-simulation-using-atomic-red-team/" />
     <author>
       <name>Kevin Alexander</name>
     </author>
 
   
     
-    <category term="Tutorial" />
+    <category term="Attack Simulation" />
     
-    <category term="SIEM" />
-    
-    <category term="ELK Stack" />
+    <category term="T1509" />
     
   
 
@@ -55,7 +53,7 @@
     <link href="http://localhost:4000/posts/integrating-fleet-server-and-preparing-windows-vm/" rel="alternate" type="text/html" title="Integrating Fleet Server And Preparing Windows VM" />
     <published>2025-05-20T15:15:00+07:00</published>
   
-    <updated>2025-05-29T13:10:04+07:00</updated>
+    <updated>2025-05-29T13:22:01+07:00</updated>
   
     <id>http://localhost:4000/posts/integrating-fleet-server-and-preparing-windows-vm/</id>
     <content type="text/html" src="http://localhost:4000/posts/integrating-fleet-server-and-preparing-windows-vm/" />
