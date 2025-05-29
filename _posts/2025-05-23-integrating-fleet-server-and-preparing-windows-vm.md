@@ -312,3 +312,11 @@ And we officially done with the installation series. From here on, you could sta
 
 So again, thank you so much for reading and following this guide and hope you learning something.
 
+| References                                                                                                                                                                                                               |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Elastic Documentation About Roles [Built-in roles](https://www.elastic.co/docs/deploy-manage/users-roles/cluster-or-deployment-auth/built-in-roles)                                                                      |
+| LevelEffect Guide by Will Nissler Part 2. [Home Lab: Enabling and Configuring Threat Intelligence and Detections](https://www.leveleffect.com/blog/home-lab-enabling-and-configuring-threat-intelligence-and-detections) |
+| Fleet Server Definition. [What is Fleet Server?](https://www.elastic.co/docs/reference/fleet/fleet-server)                                                                                                               |
+| Elastic Agent Information. [Elastic Agent policies](https://www.elastic.co/docs/reference/fleet/agent-policy)                                                                                                            |
+| Sysmon Definition. [Sysmon v15.15](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)                                                                                                                      |
+| SwiftOnSecurity GitHub. [SwiftOnSecurity](https://github.com/SwiftOnSecurity)                                                                                                                                            |
