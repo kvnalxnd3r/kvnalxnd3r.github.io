@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kevin Alexander</title>
   <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
-  <updated>2025-05-29T13:17:31+07:00</updated>
+  <updated>2025-05-29T13:20:58+07:00</updated>
   <author>
     <name>Kevin Alexander</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/red-atomic-team-attack/" rel="alternate" type="text/html" title="Attack Simulation, Red Atomic Team" />
     <published>2025-05-29T12:33:00+07:00</published>
   
-    <updated>2025-05-29T12:40:08+07:00</updated>
+    <updated>2025-05-29T13:17:51+07:00</updated>
   
     <id>http://localhost:4000/posts/red-atomic-team-attack/</id>
     <content type="text/html" src="http://localhost:4000/posts/red-atomic-team-attack/" />
@@ -75,9 +75,9 @@
 
   <summary>A Little Reminder
 
-This is part two, continuation from my post where we walk through installing ELK stack SIEM. On this part two, we will take a look at how to integrating our ELK stack with endpoint, in this case is a Windows VM.
+This is part two, continuation from my previous post(part one) where we walk through installing ELK stack SIEM. On this part two, we will take a look at how to integrating our ELK stack with endpoint, in this case is a Windows VM.
 
-We will learn also what is Filebeat, Fleet Server, Elastic Agent, Elastic Integration, and many more tools for getting our lab work as a complete eco system for simu...</summary>
+We will learn also what is Filebeat, Fleet Server, Elastic Agent, Elastic Integration, and many more tools for getting our lab work as a complete ...</summary>
 
   </entry>
 

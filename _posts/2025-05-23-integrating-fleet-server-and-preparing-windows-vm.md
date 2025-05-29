@@ -7,7 +7,7 @@ tags: [elasticsearch, siem, windows, fleet server, elastic agent, endpoint]
 
 ## A Little Reminder
 
-**This is part two**, continuation from my post where we walk through installing ELK stack SIEM. On this part two, we will take a look at how to integrating our ELK stack with endpoint, in this case is a Windows VM. 
+**This is part two**, continuation from my previous post([part one](/posts/elk-installation-with-two-vm/)) where we walk through installing ELK stack SIEM. On this part two, we will take a look at how to integrating our ELK stack with endpoint, in this case is a Windows VM. 
 
 We will learn also what is **Filebeat**, **Fleet Server**, **Elastic Agent**, **Elastic Integration**, and many more tools for getting our lab work as a complete eco system for **simulating SOC monitoring, log capturing, threat hunting, and maybe many more** in the future. Without further a do, let's get into it.
 
