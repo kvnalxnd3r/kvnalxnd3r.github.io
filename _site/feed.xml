@@ -1,0 +1,181 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Kevin Alexander</title>
+  <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
+  <updated>2025-05-29T12:39:47+07:00</updated>
+  <author>
+    <name>Kevin Alexander</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Kevin Alexander </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Attack Simulation, Red Atomic Team</title>
+    <link href="http://localhost:4000/posts/red-atomic-team-attack/" rel="alternate" type="text/html" title="Attack Simulation, Red Atomic Team" />
+    <published>2025-05-29T12:33:00+07:00</published>
+  
+    <updated>2025-05-29T12:33:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/red-atomic-team-attack/</id>
+    <content type="text/html" src="http://localhost:4000/posts/red-atomic-team-attack/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Tutorial" />
+    
+    <category term="SIEM" />
+    
+    <category term="ELK Stack" />
+    
+  
+
+  <summary></summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Integrating Fleet Server And Preparing Windows VM</title>
+    <link href="http://localhost:4000/posts/integrating-fleet-server-and-preparing-windows-vm/" rel="alternate" type="text/html" title="Integrating Fleet Server And Preparing Windows VM" />
+    <published>2025-05-20T15:15:00+07:00</published>
+  
+    <updated>2025-05-20T15:15:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/integrating-fleet-server-and-preparing-windows-vm/</id>
+    <content type="text/html" src="http://localhost:4000/posts/integrating-fleet-server-and-preparing-windows-vm/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Tutorial" />
+    
+    <category term="SIEM" />
+    
+    <category term="ELK Stack" />
+    
+  
+
+  <summary>A Little Reminder
+
+This is part two, continuation from my post where we walk through installing ELK stack SIEM. On this part two, we will take a look at how to integrating our ELK stack with endpoint, in this case is a Windows VM.
+
+We will learn also what is Filebeat, Fleet Server, Elastic Agent, Elastic Integration, and many more tools for getting our lab work as a complete eco system for simu...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>ELK Installation With Two VMs For Home Lab</title>
+    <link href="http://localhost:4000/posts/elk-installation-with-two-vm/" rel="alternate" type="text/html" title="ELK Installation With Two VMs For Home Lab" />
+    <published>2025-05-20T13:21:00+07:00</published>
+  
+    <updated>2025-05-20T13:21:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/elk-installation-with-two-vm/</id>
+    <content type="text/html" src="http://localhost:4000/posts/elk-installation-with-two-vm/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Tutorial" />
+    
+    <category term="SIEM" />
+    
+    <category term="ELK Stack" />
+    
+  
+
+  <summary>Before We Start
+
+This section is a explaination for what to expect in this blog and also serve as a shoutouts to all of the peoples that making knowledge in form of tutorials. With that being said, this is some of the people that helps me on this installation:
+
+  crin, thank you for making discord server where newbie like me and others could gather and share knowledge.
+  nubbieeee, thank you so...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Detecting Windows Logon Events 4624-4625 With Elasticsearch As a SIEM</title>
+    <link href="http://localhost:4000/posts/detecting-windows-logon-vents-4624-4625-with-elasticsearch-as-a-lightweight-self-managed-siem/" rel="alternate" type="text/html" title="Detecting Windows Logon Events 4624-4625 With Elasticsearch As a SIEM" />
+    <published>2025-04-12T13:40:00+07:00</published>
+  
+    <updated>2025-05-23T14:22:16+07:00</updated>
+  
+    <id>http://localhost:4000/posts/detecting-windows-logon-vents-4624-4625-with-elasticsearch-as-a-lightweight-self-managed-siem/</id>
+    <content type="text/html" src="http://localhost:4000/posts/detecting-windows-logon-vents-4624-4625-with-elasticsearch-as-a-lightweight-self-managed-siem/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Tutorial" />
+    
+    <category term="SIEM" />
+    
+    <category term="ELK Stack" />
+    
+  
+
+  <summary>Detecting My First Event
+
+First time I’m diving into cyber security and being tasked to explore Elasticsearch and it’s functionality, that is where I’m really in a dark as to how and where to begin with this journey ahead. But then I watch some videos on youtube and in it Elasticsearch can be used for events detection. At that time, there’s a light bulb lights up on my mind because I thought to...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Elastic Self-managed Installation</title>
+    <link href="http://localhost:4000/posts/elastic-self-managed-installation/" rel="alternate" type="text/html" title="Elastic Self-managed Installation" />
+    <published>2025-04-11T16:25:00+07:00</published>
+  
+    <updated>2025-05-23T14:19:43+07:00</updated>
+  
+    <id>http://localhost:4000/posts/elastic-self-managed-installation/</id>
+    <content type="text/html" src="http://localhost:4000/posts/elastic-self-managed-installation/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Tutorial" />
+    
+    <category term="SIEM" />
+    
+    <category term="ELK Stack" />
+    
+  
+
+  <summary>What Makes Me Start
+
+I just started my first work as SOC Analyst back in march 2025. When I first started, my manager asking me to install and play around with Elasticsearch. An application that I never heard before. My first thought is just “meh, it’s just another apps, what could be so difficult about it”.
+
+
+Basically What My Experience Looks like
+
+Oh boy was I so wrong. Elastic is a giant to...</summary>
+
+  </entry>
+
+</feed>
+
+
