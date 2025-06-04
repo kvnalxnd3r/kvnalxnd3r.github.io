@@ -1,8 +1,8 @@
 ---
-title: Attack Simulation Using Atomic Red Team
+title: Brute Force Attack Using RDP
 date: 2025-05-29 12:33 +0700
-categories: [Attack Simulation, T1509]
-tags: [elasticsearch, siem, windows, atomic red team, cyber attack, endpoint, logs]
+categories: [Attack Simulation, Brute Force]
+tags: [elasticsearch, siem, windows, rdp, kali, brute force, cyber attack, endpoint, logs]
 ---
 
 ## UNDER CONSTRUCTION
