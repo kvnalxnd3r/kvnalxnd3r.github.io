@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kevin Alexander</title>
   <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
-  <updated>2025-05-29T15:46:20+07:00</updated>
+  <updated>2025-06-08T18:56:04+07:00</updated>
   <author>
     <name>Kevin Alexander</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,14 @@
 
   
   <entry>
-    <title>Attack Simulation Using Atomic Red Team</title>
-    <link href="http://localhost:4000/posts/attack-simulation-using-atomic-red-team/" rel="alternate" type="text/html" title="Attack Simulation Using Atomic Red Team" />
+    <title>Brute Force Attack Using RDP</title>
+    <link href="http://localhost:4000/posts/brute-force-attack-using-rdp/" rel="alternate" type="text/html" title="Brute Force Attack Using RDP" />
     <published>2025-05-29T12:33:00+07:00</published>
   
-    <updated>2025-05-29T12:33:00+07:00</updated>
+    <updated>2025-06-04T16:35:19+07:00</updated>
   
-    <id>http://localhost:4000/posts/attack-simulation-using-atomic-red-team/</id>
-    <content type="text/html" src="http://localhost:4000/posts/attack-simulation-using-atomic-red-team/" />
+    <id>http://localhost:4000/posts/brute-force-attack-using-rdp/</id>
+    <content type="text/html" src="http://localhost:4000/posts/brute-force-attack-using-rdp/" />
     <author>
       <name>Kevin Alexander</name>
     </author>
@@ -36,14 +36,15 @@
     
     <category term="Attack Simulation" />
     
-    <category term="T1509" />
+    <category term="Brute Force" />
     
   
 
-  <summary>UNDER CONSTRUCTION
+  <summary>About This Post
 
+This post made because I thought “Okay, I got my tasked by my workplace to learn how to make Detection Rules and Active Directory. Maybe I could search something on the internet that connect these two?” And to my surprise there’s already someone that did what exactly I thought. Shout out to MyDFIR for the video that I used as my main basis and reference throughout this post.
 
-  UNDER CONSTRUCTION, PLEASE WAIT FOR THE UPDATE.</summary>
+S...</summary>
 
   </entry>
 
@@ -53,7 +54,7 @@
     <link href="http://localhost:4000/posts/integrating-fleet-server-and-preparing-windows-vm/" rel="alternate" type="text/html" title="Integrating Fleet Server And Preparing Windows VM" />
     <published>2025-05-20T15:15:00+07:00</published>
   
-    <updated>2025-05-29T13:22:01+07:00</updated>
+    <updated>2025-05-29T15:48:25+07:00</updated>
   
     <id>http://localhost:4000/posts/integrating-fleet-server-and-preparing-windows-vm/</id>
     <content type="text/html" src="http://localhost:4000/posts/integrating-fleet-server-and-preparing-windows-vm/" />
