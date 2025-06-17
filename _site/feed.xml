@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kevin Alexander</title>
   <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
-  <updated>2025-06-08T18:56:04+07:00</updated>
+  <updated>2025-06-17T12:05:59+07:00</updated>
   <author>
     <name>Kevin Alexander</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,45 @@
 
   
   <entry>
+    <title>Creating Elastic Login Dashboard</title>
+    <link href="http://localhost:4000/posts/creating-elastic-login-dashboard/" rel="alternate" type="text/html" title="Creating Elastic Login Dashboard" />
+    <published>2025-06-16T14:40:00+07:00</published>
+  
+    <updated>2025-06-16T14:40:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/creating-elastic-login-dashboard/</id>
+    <content type="text/html" src="http://localhost:4000/posts/creating-elastic-login-dashboard/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Tutorial" />
+    
+    <category term="SIEM" />
+    
+    <category term="ELK Stack" />
+    
+  
+
+  <summary>Before We Start
+
+Welcome to another post of me yapping about cyber security. This time, I want to yap about how to build your own dashboard in Elastic. This post is done with objective of allowing us to understand how to build dashboard that suit your need or my need while also learning the progress of making it along the way. 
+
+Bild 👍
+
+With that being said, the type of dashboard that we will b...</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>Brute Force Attack Using RDP</title>
     <link href="http://localhost:4000/posts/brute-force-attack-using-rdp/" rel="alternate" type="text/html" title="Brute Force Attack Using RDP" />
     <published>2025-05-29T12:33:00+07:00</published>
   
-    <updated>2025-06-04T16:35:19+07:00</updated>
+    <updated>2025-06-08T18:57:03+07:00</updated>
   
     <id>http://localhost:4000/posts/brute-force-attack-using-rdp/</id>
     <content type="text/html" src="http://localhost:4000/posts/brute-force-attack-using-rdp/" />
@@ -140,41 +174,6 @@ This section is a explaination for what to expect in this blog and also serve as
   <summary>Detecting My First Event
 
 First time I’m diving into cyber security and being tasked to explore Elasticsearch and it’s functionality, that is where I’m really in a dark as to how and where to begin with this journey ahead. But then I watch some videos on youtube and in it Elasticsearch can be used for events detection. At that time, there’s a light bulb lights up on my mind because I thought to...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Elastic Self-managed Installation</title>
-    <link href="http://localhost:4000/posts/elastic-self-managed-installation/" rel="alternate" type="text/html" title="Elastic Self-managed Installation" />
-    <published>2025-04-11T16:25:00+07:00</published>
-  
-    <updated>2025-05-23T14:19:43+07:00</updated>
-  
-    <id>http://localhost:4000/posts/elastic-self-managed-installation/</id>
-    <content type="text/html" src="http://localhost:4000/posts/elastic-self-managed-installation/" />
-    <author>
-      <name>Kevin Alexander</name>
-    </author>
-
-  
-    
-    <category term="Tutorial" />
-    
-    <category term="SIEM" />
-    
-    <category term="ELK Stack" />
-    
-  
-
-  <summary>What Makes Me Start
-
-I just started my first work as SOC Analyst back in march 2025. When I first started, my manager asking me to install and play around with Elasticsearch. An application that I never heard before. My first thought is just “meh, it’s just another apps, what could be so difficult about it”.
-
-
-Basically What My Experience Looks like
-
-Oh boy was I so wrong. Elastic is a giant to...</summary>
 
   </entry>
 
