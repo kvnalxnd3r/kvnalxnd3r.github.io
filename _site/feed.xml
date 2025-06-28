@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kevin Alexander</title>
   <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
-  <updated>2025-06-17T12:05:59+07:00</updated>
+  <updated>2025-06-28T15:03:23+07:00</updated>
   <author>
     <name>Kevin Alexander</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,36 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Python Learning, Part 1. Datatypes</title>
+    <link href="http://localhost:4000/posts/python-learning-part-1-datatypes/" rel="alternate" type="text/html" title="Python Learning, Part 1. Datatypes" />
+    <published>2025-06-23T15:41:00+07:00</published>
+  
+    <updated>2025-06-23T15:41:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/python-learning-part-1-datatypes/</id>
+    <content type="text/html" src="http://localhost:4000/posts/python-learning-part-1-datatypes/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Programming" />
+    
+    <category term="Python" />
+    
+    <category term="Learning" />
+    
+  
+
+  <summary>Appreciation Words
+
+This learning was possible because I got informed by this GitHub repo and in it there’s so many learning resources about cyber security, ethical hacking, network, programming and many more. And I stumbled upon e-book titled “Full Speed Python” by João Ventura, where his book teaches python but with such a simple way and hands-on practice too. What I also like about his book ...</summary>
+
+  </entry>
 
   
   <entry>
@@ -144,36 +174,6 @@ This section is a explaination for what to expect in this blog and also serve as
 
   crin, thank you for making discord server where newbie like me and others could gather and share knowledge.
   nubbieeee, thank you so...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Detecting Windows Logon Events 4624-4625 With Elasticsearch As a SIEM</title>
-    <link href="http://localhost:4000/posts/detecting-windows-logon-vents-4624-4625-with-elasticsearch-as-a-lightweight-self-managed-siem/" rel="alternate" type="text/html" title="Detecting Windows Logon Events 4624-4625 With Elasticsearch As a SIEM" />
-    <published>2025-04-12T13:40:00+07:00</published>
-  
-    <updated>2025-05-23T14:22:16+07:00</updated>
-  
-    <id>http://localhost:4000/posts/detecting-windows-logon-vents-4624-4625-with-elasticsearch-as-a-lightweight-self-managed-siem/</id>
-    <content type="text/html" src="http://localhost:4000/posts/detecting-windows-logon-vents-4624-4625-with-elasticsearch-as-a-lightweight-self-managed-siem/" />
-    <author>
-      <name>Kevin Alexander</name>
-    </author>
-
-  
-    
-    <category term="Tutorial" />
-    
-    <category term="SIEM" />
-    
-    <category term="ELK Stack" />
-    
-  
-
-  <summary>Detecting My First Event
-
-First time I’m diving into cyber security and being tasked to explore Elasticsearch and it’s functionality, that is where I’m really in a dark as to how and where to begin with this journey ahead. But then I watch some videos on youtube and in it Elasticsearch can be used for events detection. At that time, there’s a light bulb lights up on my mind because I thought to...</summary>
 
   </entry>
 
