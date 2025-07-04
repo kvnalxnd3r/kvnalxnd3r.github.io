@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kevin Alexander</title>
   <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
-  <updated>2025-06-28T15:03:23+07:00</updated>
+  <updated>2025-07-04T09:57:50+07:00</updated>
   <author>
     <name>Kevin Alexander</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,43 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Python Learning, Part 2. Lists</title>
+    <link href="http://localhost:4000/posts/python-learning-part-2-lists/" rel="alternate" type="text/html" title="Python Learning, Part 2. Lists" />
+    <published>2025-06-23T15:41:00+07:00</published>
+  
+    <updated>2025-06-23T15:41:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/python-learning-part-2-lists/</id>
+    <content type="text/html" src="http://localhost:4000/posts/python-learning-part-2-lists/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Programming" />
+    
+    <category term="Python" />
+    
+    <category term="Learning" />
+    
+  
+
+  <summary>Chapter 4: Lists
+
+Next chapter after Datatypes, in this chapter it’s more focused on how to comprehend how’s the lists work in Python, how to use them, and how to process it. Without further ado, here’s the stuff that I learned throughout this chapter:
+
+First lists exercise
+
+
+Chapter 4: Lists
+
+In this chapter, there’s only one basic exercise but with a multiple task that follows it, so I’ll go ...</summary>
+
+  </entry>
 
   
   <entry>
@@ -141,39 +178,6 @@ S...</summary>
 This is part two, continuation from my previous post(part one) where we walk through installing ELK stack SIEM. On this part two, we will take a look at how to integrating our ELK stack with endpoint, in this case is a Windows VM.
 
 We will learn also what is Filebeat, Fleet Server, Elastic Agent, Elastic Integration, and many more tools for getting our lab work as a complete ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>ELK Installation With Two VMs For Home Lab</title>
-    <link href="http://localhost:4000/posts/elk-installation-with-two-vm/" rel="alternate" type="text/html" title="ELK Installation With Two VMs For Home Lab" />
-    <published>2025-05-20T13:21:00+07:00</published>
-  
-    <updated>2025-05-20T13:21:00+07:00</updated>
-  
-    <id>http://localhost:4000/posts/elk-installation-with-two-vm/</id>
-    <content type="text/html" src="http://localhost:4000/posts/elk-installation-with-two-vm/" />
-    <author>
-      <name>Kevin Alexander</name>
-    </author>
-
-  
-    
-    <category term="Tutorial" />
-    
-    <category term="SIEM" />
-    
-    <category term="ELK Stack" />
-    
-  
-
-  <summary>Before We Start
-
-This section is a explaination for what to expect in this blog and also serve as a shoutouts to all of the peoples that making knowledge in form of tutorials. With that being said, this is some of the people that helps me on this installation:
-
-  crin, thank you for making discord server where newbie like me and others could gather and share knowledge.
-  nubbieeee, thank you so...</summary>
 
   </entry>
 
