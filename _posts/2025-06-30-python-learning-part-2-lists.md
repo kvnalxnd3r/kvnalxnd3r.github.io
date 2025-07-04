@@ -9,7 +9,7 @@ tags: [programming, python, learning, lists, learning journal]
 
 Next chapter after Datatypes, in this chapter it's more focused on how to comprehend how's the lists work in Python, how to use them, and how to process it. Without further ado, here's the stuff that I learned throughout this chapter:
 
-### First lists exercise
+### First List Exercises
 
 ![Desktop View](assets/img/posts/2025-06-30-python-learning-part-2-lists/list-first-exercise.png){: width="800"}
 _Chapter 4: Lists_
@@ -72,6 +72,8 @@ Here's my fixing of the code previously and let's see the result.
 _Removing Lists Values After Fix_
 
 And the code working fine and dandy now, the values are also being removed as you can see from the output. So yeah, there's two ways to removing specific values out of from the list, I could be not knowing if there's another ways to do it but let me know if there is another way. 
+
+### Second Comprehensions List
 
 Let's go to the next task, **list comprehensions**. Here's the task in the book.
 
