@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kevin Alexander</title>
   <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
-  <updated>2025-07-13T14:35:31+07:00</updated>
+  <updated>2025-07-13T14:38:47+07:00</updated>
   <author>
     <name>Kevin Alexander</name>
     <uri>http://localhost:4000/</uri>
@@ -56,7 +56,7 @@ print(math.ra...</summary>
   <entry>
     <title>Python Learning, Part 2. Lists</title>
     <link href="http://localhost:4000/posts/python-learning-part-2-lists/" rel="alternate" type="text/html" title="Python Learning, Part 2. Lists" />
-    <published>2025-06-23T15:41:00+07:00</published>
+    <published>2025-06-30T14:10:00+07:00</published>
   
     <updated>2025-07-04T19:25:41+07:00</updated>
   

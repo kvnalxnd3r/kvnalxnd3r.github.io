@@ -1,6 +1,6 @@
 ---
 title: Python Learning, Part 2. Lists
-date: 2025-06-23 15:41 +0700
+date: 2025-06-30 14:10 +0700
 categories: [Programming, Python, Learning]
 tags: [programming, python, learning, lists, learning journal]
 ---
