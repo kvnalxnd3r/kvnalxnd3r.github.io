@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kevin Alexander</title>
   <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
-  <updated>2025-07-13T14:38:47+07:00</updated>
+  <updated>2025-07-20T23:00:25+07:00</updated>
   <author>
     <name>Kevin Alexander</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,38 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Python Learning, Part 4. Iteration &amp; Loops</title>
+    <link href="http://localhost:4000/posts/python-learning-part-4-iteration-and-loops/" rel="alternate" type="text/html" title="Python Learning, Part 4. Iteration &amp;amp; Loops" />
+    <published>2025-07-14T10:09:00+07:00</published>
+  
+    <updated>2025-07-14T10:09:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/python-learning-part-4-iteration-and-loops/</id>
+    <content type="text/html" src="http://localhost:4000/posts/python-learning-part-4-iteration-and-loops/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Programming" />
+    
+    <category term="Python" />
+    
+    <category term="Learning" />
+    
+  
+
+  <summary>Chapter 6: Iteration and Loops
+
+Back again with another Python learning journal, with learning topic of iteration &amp;amp;amp; looping in Python language. This chapter is the important fundamental of every programming language including Python. Because with with it, we are able to tell the computer to iterate each values, enabling us to automate repetitive tasks.
+
+For Python, the most common looping i...</summary>
+
+  </entry>
 
   
   <entry>
@@ -58,7 +90,7 @@ print(math.ra...</summary>
     <link href="http://localhost:4000/posts/python-learning-part-2-lists/" rel="alternate" type="text/html" title="Python Learning, Part 2. Lists" />
     <published>2025-06-30T14:10:00+07:00</published>
   
-    <updated>2025-07-04T19:25:41+07:00</updated>
+    <updated>2025-07-13T14:39:34+07:00</updated>
   
     <id>http://localhost:4000/posts/python-learning-part-2-lists/</id>
     <content type="text/html" src="http://localhost:4000/posts/python-learning-part-2-lists/" />
@@ -150,36 +182,6 @@ Welcome to another post of me yapping about cyber security. This time, I want to
 Bild 👍
 
 With that being said, the type of dashboard that we will b...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Brute Force Attack Using RDP</title>
-    <link href="http://localhost:4000/posts/brute-force-attack-using-rdp/" rel="alternate" type="text/html" title="Brute Force Attack Using RDP" />
-    <published>2025-05-29T12:33:00+07:00</published>
-  
-    <updated>2025-06-08T18:57:03+07:00</updated>
-  
-    <id>http://localhost:4000/posts/brute-force-attack-using-rdp/</id>
-    <content type="text/html" src="http://localhost:4000/posts/brute-force-attack-using-rdp/" />
-    <author>
-      <name>Kevin Alexander</name>
-    </author>
-
-  
-    
-    <category term="Attack Simulation" />
-    
-    <category term="Brute Force" />
-    
-  
-
-  <summary>About This Post
-
-This post made because I thought “Okay, I got my tasked by my workplace to learn how to make Detection Rules and Active Directory. Maybe I could search something on the internet that connect these two?” And to my surprise there’s already someone that did what exactly I thought. Shout out to MyDFIR for the video that I used as my main basis and reference throughout this post.
-
-S...</summary>
 
   </entry>
 
