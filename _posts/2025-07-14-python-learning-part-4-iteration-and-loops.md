@@ -667,4 +667,3 @@ Thank you again for Professor João Ventura for this wonderful learning resource
 | Standard Python Rule For Writing Style. [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)                                                                      |
 | Stack overflow ValueError Case. [ValueError: invalid literal for int() with base 10: ''](https://stackoverflow.com/questions/1841565/valueerror-invalid-literal-for-int-with-base-10) |
 
-
