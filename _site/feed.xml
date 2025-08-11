@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kevin Alexander</title>
   <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
-  <updated>2025-07-21T17:01:20+07:00</updated>
+  <updated>2025-08-11T18:45:09+07:00</updated>
   <author>
     <name>Kevin Alexander</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,68 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Bandit OverTheWire Writeup, Bandit6 &amp; Bandit7</title>
+    <link href="http://localhost:4000/posts/bandit-overthewire-bandit6-and-bandit7-writeup/" rel="alternate" type="text/html" title="Bandit OverTheWire Writeup, Bandit6 &amp;amp; Bandit7" />
+    <published>2025-08-11T15:55:00+07:00</published>
+  
+    <updated>2025-08-11T15:55:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/bandit-overthewire-bandit6-and-bandit7-writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/bandit-overthewire-bandit6-and-bandit7-writeup/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Bandit OverTheWire" />
+    
+    <category term="Learning" />
+    
+  
+
+  <summary>New Series
+This is a new series where I go over how I learn linux by completing each level of challenge on OverTheWire, this being done by me because I still feels my Linux skill still shallow and needed improvement and enter Bandit OverTheWire. Shoutout to the OverTheWire team once again for this useful learning. Let’s get straight in to the writeup.
+
+Small Disclaimer
+Why did I start on level ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Python Learning, Part 5. Dictionaries</title>
+    <link href="http://localhost:4000/posts/python-learning-part-5-dictionaries/" rel="alternate" type="text/html" title="Python Learning, Part 5. Dictionaries" />
+    <published>2025-07-21T17:02:00+07:00</published>
+  
+    <updated>2025-07-21T17:02:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/python-learning-part-5-dictionaries/</id>
+    <content type="text/html" src="http://localhost:4000/posts/python-learning-part-5-dictionaries/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Programming" />
+    
+    <category term="Python" />
+    
+    <category term="Learning" />
+    
+  
+
+  <summary>Chapter 7: Dictionaries
+
+Another week, another learning journal and this time I’m learning Dictionaries, the part where I will spent most of time to comprehend it(as of time writing this, I’ve already spent roughly 15 days to just understand the basic and fundamental of it, I know, skill issue from my side. But I’ll just write it nonetheless kek…). You will see a lot of “headbanging my head to ...</summary>
+
+  </entry>
 
   
   <entry>
@@ -118,70 +180,6 @@ First List Exercises
 Chapter 4: Lists
 
 In this chapter, there’s only one basic exercise but with a multiple task that follows it, so I’ll go ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Python Learning, Part 1. Datatypes</title>
-    <link href="http://localhost:4000/posts/python-learning-part-1-datatypes/" rel="alternate" type="text/html" title="Python Learning, Part 1. Datatypes" />
-    <published>2025-06-23T15:41:00+07:00</published>
-  
-    <updated>2025-06-23T15:41:00+07:00</updated>
-  
-    <id>http://localhost:4000/posts/python-learning-part-1-datatypes/</id>
-    <content type="text/html" src="http://localhost:4000/posts/python-learning-part-1-datatypes/" />
-    <author>
-      <name>Kevin Alexander</name>
-    </author>
-
-  
-    
-    <category term="Programming" />
-    
-    <category term="Python" />
-    
-    <category term="Learning" />
-    
-  
-
-  <summary>Appreciation Words
-
-This learning was possible because I got informed by this GitHub repo and in it there’s so many learning resources about cyber security, ethical hacking, network, programming and many more. And I stumbled upon e-book titled “Full Speed Python” by João Ventura, where his book teaches python but with such a simple way and hands-on practice too. What I also like about his book ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Creating Elastic Login Dashboard</title>
-    <link href="http://localhost:4000/posts/creating-elastic-login-dashboard/" rel="alternate" type="text/html" title="Creating Elastic Login Dashboard" />
-    <published>2025-06-16T14:40:00+07:00</published>
-  
-    <updated>2025-06-16T14:40:00+07:00</updated>
-  
-    <id>http://localhost:4000/posts/creating-elastic-login-dashboard/</id>
-    <content type="text/html" src="http://localhost:4000/posts/creating-elastic-login-dashboard/" />
-    <author>
-      <name>Kevin Alexander</name>
-    </author>
-
-  
-    
-    <category term="Tutorial" />
-    
-    <category term="SIEM" />
-    
-    <category term="ELK Stack" />
-    
-  
-
-  <summary>Before We Start
-
-Welcome to another post of me yapping about cyber security. This time, I want to yap about how to build your own dashboard in Elastic. This post is done with objective of allowing us to understand how to build dashboard that suit your need or my need while also learning the progress of making it along the way. 
-
-Bild 👍
-
-With that being said, the type of dashboard that we will b...</summary>
 
   </entry>
 
