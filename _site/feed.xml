@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kevin Alexander</title>
   <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
-  <updated>2025-08-11T18:45:09+07:00</updated>
+  <updated>2025-08-12T20:16:23+07:00</updated>
   <author>
     <name>Kevin Alexander</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,41 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Bandit OverTheWire Writeup, Bandit8 &amp; Bandit9</title>
+    <link href="http://localhost:4000/posts/bandit-overthewire-bandit8-and-bandit9-writeup/" rel="alternate" type="text/html" title="Bandit OverTheWire Writeup, Bandit8 &amp;amp; Bandit9" />
+    <published>2025-08-12T17:20:00+07:00</published>
+  
+    <updated>2025-08-12T17:20:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/bandit-overthewire-bandit8-and-bandit9-writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/bandit-overthewire-bandit8-and-bandit9-writeup/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Bandit OverTheWire" />
+    
+    <category term="Learning" />
+    
+  
+
+  <summary>Level 7 → Level 8
+
+Today we have level 7 and here we gonna learn something new again from this task below.
+
+
+Level 7 Task
+
+Now, we being tasked for finding password stored in txt file and that it located near the word millionth. Well, this is interesting, because for me, I have some cases IRL that when I needed to search some words but I just know the words surrounding it. So, let’s begin how I...</summary>
+
+  </entry>
 
   
   <entry>
@@ -143,43 +178,6 @@ This chapter of my Python learning journey is really interesting for me, because
 import math
 print(math.cos(0.0)) 
 print(math.ra...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Python Learning, Part 2. Lists</title>
-    <link href="http://localhost:4000/posts/python-learning-part-2-lists/" rel="alternate" type="text/html" title="Python Learning, Part 2. Lists" />
-    <published>2025-06-30T14:10:00+07:00</published>
-  
-    <updated>2025-07-13T14:39:34+07:00</updated>
-  
-    <id>http://localhost:4000/posts/python-learning-part-2-lists/</id>
-    <content type="text/html" src="http://localhost:4000/posts/python-learning-part-2-lists/" />
-    <author>
-      <name>Kevin Alexander</name>
-    </author>
-
-  
-    
-    <category term="Programming" />
-    
-    <category term="Python" />
-    
-    <category term="Learning" />
-    
-  
-
-  <summary>Chapter 4: Lists
-
-Next chapter after Datatypes, in this chapter it’s more focused on how to comprehend how’s the lists work in Python, how to use them, and how to process it. Without further ado, here’s the stuff that I learned throughout this chapter:
-
-First List Exercises
-
-
-Chapter 4: Lists
-
-In this chapter, there’s only one basic exercise but with a multiple task that follows it, so I’ll go ...</summary>
 
   </entry>
 
