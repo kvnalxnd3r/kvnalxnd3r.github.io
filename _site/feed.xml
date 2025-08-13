@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kevin Alexander</title>
   <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
-  <updated>2025-08-12T20:16:23+07:00</updated>
+  <updated>2025-08-13T16:27:02+07:00</updated>
   <author>
     <name>Kevin Alexander</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,45 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Bandit OverTheWire Writeup, Bandit10 &amp; Bandit11</title>
+    <link href="http://localhost:4000/posts/bandit-overthewire-bandit9-and-bandit10-writeup/" rel="alternate" type="text/html" title="Bandit OverTheWire Writeup, Bandit10 &amp;amp; Bandit11" />
+    <published>2025-08-13T15:40:00+07:00</published>
+  
+    <updated>2025-08-13T15:40:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/bandit-overthewire-bandit9-and-bandit10-writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/bandit-overthewire-bandit9-and-bandit10-writeup/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Bandit OverTheWire" />
+    
+    <category term="Learning" />
+    
+  
+
+  <summary>Level 9 → Level 10
+
+The challenge we have today is as follow on the picture below.
+
+
+Level 7 Task
+
+We still have to learn about uniq occurrence of strings data type and sorting it among the sea of gibberish character huh…. Well this will be interesting, I get the feeling we’ll use this a lot too IRL scenario, so let’s jump into it.
+
+
+
+As per usual, we’ll need to check on the data.txt file, and ...</summary>
+
+  </entry>
 
   
   <entry>
@@ -144,40 +183,6 @@ Another week, another learning journal and this time I’m learning Dictionaries
 Back again with another Python learning journal, with learning topic of iteration &amp;amp;amp; looping in Python language. This chapter is the important fundamental of every programming language including Python. Because with with it, we are able to tell the computer to iterate each values, enabling us to automate repetitive tasks.
 
 For Python, the most common looping i...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Python Learning, Part 3. Modules and Functions</title>
-    <link href="http://localhost:4000/posts/python-learning-part-3-modules-and-functions/" rel="alternate" type="text/html" title="Python Learning, Part 3. Modules and Functions" />
-    <published>2025-07-07T12:15:00+07:00</published>
-  
-    <updated>2025-07-07T12:15:00+07:00</updated>
-  
-    <id>http://localhost:4000/posts/python-learning-part-3-modules-and-functions/</id>
-    <content type="text/html" src="http://localhost:4000/posts/python-learning-part-3-modules-and-functions/" />
-    <author>
-      <name>Kevin Alexander</name>
-    </author>
-
-  
-    
-    <category term="Programming" />
-    
-    <category term="Python" />
-    
-    <category term="Learning" />
-    
-  
-
-  <summary>Chapter 5: Modules and Functions
-
-This chapter of my Python learning journey is really interesting for me, because I always fascinated as to how computers being able to process complex mathematic problem and with Python it is possible when we import math modules that containing mathematical function, that way we could perform something like this:
-
-import math
-print(math.cos(0.0)) 
-print(math.ra...</summary>
 
   </entry>
 
