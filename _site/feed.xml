@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kevin Alexander</title>
   <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
-  <updated>2025-08-13T16:27:02+07:00</updated>
+  <updated>2025-08-14T17:56:31+07:00</updated>
   <author>
     <name>Kevin Alexander</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,45 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Bandit OverTheWire Writeup, Bandit11 &amp; Bandit12</title>
+    <link href="http://localhost:4000/posts/bandit-overthewire-bandit11-and-bandit12-writeup/" rel="alternate" type="text/html" title="Bandit OverTheWire Writeup, Bandit11 &amp;amp; Bandit12" />
+    <published>2025-08-13T17:00:00+07:00</published>
+  
+    <updated>2025-08-13T17:00:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/bandit-overthewire-bandit11-and-bandit12-writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/bandit-overthewire-bandit11-and-bandit12-writeup/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Bandit OverTheWire" />
+    
+    <category term="Learning" />
+    
+  
+
+  <summary>Level 11 → Level 12
+
+Let’s get into the point straight, today we have challenge 11 and 12, here we go.
+
+
+Level 11 Task
+
+So we begin as usual by reading what the external reading has to offered. In this case, OverTheWire guide us to read about ROT13 in wikipedia in order to solve this level, well let’s see then what is this ROT 13 about.
+
+
+
+Oh, so it’s basically switching position of alphabetica...</summary>
+
+  </entry>
 
   
   <entry>
@@ -151,38 +190,6 @@ Why did I start on level ...</summary>
   <summary>Chapter 7: Dictionaries
 
 Another week, another learning journal and this time I’m learning Dictionaries, the part where I will spent most of time to comprehend it(as of time writing this, I’ve already spent roughly 15 days to just understand the basic and fundamental of it, I know, skill issue from my side. But I’ll just write it nonetheless kek…). You will see a lot of “headbanging my head to ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Python Learning, Part 4. Iteration &amp; Loops</title>
-    <link href="http://localhost:4000/posts/python-learning-part-4-iteration-and-loops/" rel="alternate" type="text/html" title="Python Learning, Part 4. Iteration &amp;amp; Loops" />
-    <published>2025-07-14T10:09:00+07:00</published>
-  
-    <updated>2025-07-14T10:09:00+07:00</updated>
-  
-    <id>http://localhost:4000/posts/python-learning-part-4-iteration-and-loops/</id>
-    <content type="text/html" src="http://localhost:4000/posts/python-learning-part-4-iteration-and-loops/" />
-    <author>
-      <name>Kevin Alexander</name>
-    </author>
-
-  
-    
-    <category term="Programming" />
-    
-    <category term="Python" />
-    
-    <category term="Learning" />
-    
-  
-
-  <summary>Chapter 6: Iteration and Loops
-
-Back again with another Python learning journal, with learning topic of iteration &amp;amp;amp; looping in Python language. This chapter is the important fundamental of every programming language including Python. Because with with it, we are able to tell the computer to iterate each values, enabling us to automate repetitive tasks.
-
-For Python, the most common looping i...</summary>
 
   </entry>
 
