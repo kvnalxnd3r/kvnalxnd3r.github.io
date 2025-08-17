@@ -1,6 +1,6 @@
 ---
 title: Bandit OverTheWire Writeup, Bandit11 & Bandit12
-date: 2025-08-13 17:00 +0700
+date: 2025-08-14 17:00 +0700
 categories: [Linux, Bandit OverTheWire, Learning]
 tags: [linux, linux command, learning, os, writeup]
 ---

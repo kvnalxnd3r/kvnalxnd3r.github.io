@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kevin Alexander</title>
   <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
-  <updated>2025-08-14T17:56:31+07:00</updated>
+  <updated>2025-08-17T18:26:39+07:00</updated>
   <author>
     <name>Kevin Alexander</name>
     <uri>http://localhost:4000/</uri>
@@ -21,10 +21,49 @@
   
   <entry>
     <title>Bandit OverTheWire Writeup, Bandit11 &amp; Bandit12</title>
-    <link href="http://localhost:4000/posts/bandit-overthewire-bandit11-and-bandit12-writeup/" rel="alternate" type="text/html" title="Bandit OverTheWire Writeup, Bandit11 &amp;amp; Bandit12" />
-    <published>2025-08-13T17:00:00+07:00</published>
+    <link href="http://localhost:4000/posts/bandit-overthewire-bandit13-and-bandit14-writeup/" rel="alternate" type="text/html" title="Bandit OverTheWire Writeup, Bandit11 &amp;amp; Bandit12" />
+    <published>2025-08-17T18:00:00+07:00</published>
   
-    <updated>2025-08-13T17:00:00+07:00</updated>
+    <updated>2025-08-17T18:00:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/bandit-overthewire-bandit13-and-bandit14-writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/bandit-overthewire-bandit13-and-bandit14-writeup/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Bandit OverTheWire" />
+    
+    <category term="Learning" />
+    
+  
+
+  <summary>Level 13 → Level 14
+
+Another challenge for today, so let’s try solving it, here’s the challenge.
+
+
+Level 13 Task
+
+Now, we being tasked to use SSH key instead of the usual password that we have been using so far. Interesting, let’s read what is the reference being cited in the task about. I also curious what is the deal with this whole “key” thingies.
+
+
+
+Now I see why it’s more secure using the ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Bandit OverTheWire Writeup, Bandit11 &amp; Bandit12</title>
+    <link href="http://localhost:4000/posts/bandit-overthewire-bandit11-and-bandit12-writeup/" rel="alternate" type="text/html" title="Bandit OverTheWire Writeup, Bandit11 &amp;amp; Bandit12" />
+    <published>2025-08-14T17:00:00+07:00</published>
+  
+    <updated>2025-08-14T17:00:00+07:00</updated>
   
     <id>http://localhost:4000/posts/bandit-overthewire-bandit11-and-bandit12-writeup/</id>
     <content type="text/html" src="http://localhost:4000/posts/bandit-overthewire-bandit11-and-bandit12-writeup/" />
@@ -160,36 +199,6 @@ This is a new series where I go over how I learn linux by completing each level 
 
 Small Disclaimer
 Why did I start on level ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Python Learning, Part 5. Dictionaries</title>
-    <link href="http://localhost:4000/posts/python-learning-part-5-dictionaries/" rel="alternate" type="text/html" title="Python Learning, Part 5. Dictionaries" />
-    <published>2025-07-21T17:02:00+07:00</published>
-  
-    <updated>2025-07-21T17:02:00+07:00</updated>
-  
-    <id>http://localhost:4000/posts/python-learning-part-5-dictionaries/</id>
-    <content type="text/html" src="http://localhost:4000/posts/python-learning-part-5-dictionaries/" />
-    <author>
-      <name>Kevin Alexander</name>
-    </author>
-
-  
-    
-    <category term="Programming" />
-    
-    <category term="Python" />
-    
-    <category term="Learning" />
-    
-  
-
-  <summary>Chapter 7: Dictionaries
-
-Another week, another learning journal and this time I’m learning Dictionaries, the part where I will spent most of time to comprehend it(as of time writing this, I’ve already spent roughly 15 days to just understand the basic and fundamental of it, I know, skill issue from my side. But I’ll just write it nonetheless kek…). You will see a lot of “headbanging my head to ...</summary>
 
   </entry>
 
