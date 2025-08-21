@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kevin Alexander</title>
   <subtitle>My journal about whatever my learning progress in general be it cyber security or anything.</subtitle>
-  <updated>2025-08-17T18:26:39+07:00</updated>
+  <updated>2025-08-21T14:29:44+07:00</updated>
   <author>
     <name>Kevin Alexander</name>
     <uri>http://localhost:4000/</uri>
@@ -20,8 +20,43 @@
 
   
   <entry>
-    <title>Bandit OverTheWire Writeup, Bandit11 &amp; Bandit12</title>
-    <link href="http://localhost:4000/posts/bandit-overthewire-bandit13-and-bandit14-writeup/" rel="alternate" type="text/html" title="Bandit OverTheWire Writeup, Bandit11 &amp;amp; Bandit12" />
+    <title>Bandit OverTheWire Writeup, Bandit14, Bandit15, Bandit16, Bandit17</title>
+    <link href="http://localhost:4000/posts/bandit-overthewire-bandit14-bandit15-bandit16-bandit17-writeup/" rel="alternate" type="text/html" title="Bandit OverTheWire Writeup, Bandit14, Bandit15, Bandit16, Bandit17" />
+    <published>2025-08-19T16:21:00+07:00</published>
+  
+    <updated>2025-08-19T16:21:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/bandit-overthewire-bandit14-bandit15-bandit16-bandit17-writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/bandit-overthewire-bandit14-bandit15-bandit16-bandit17-writeup/" />
+    <author>
+      <name>Kevin Alexander</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Bandit OverTheWire" />
+    
+    <category term="Learning" />
+    
+  
+
+  <summary>Level 14 → Level 15
+
+Okay, so yesterday I wasn’t able to keep up to post my daily write up for bandit14 and bandit15 because of works, and in this writeup, I’ll just combine them, let’s get into it here’s the task.
+
+
+Level 15 Task
+
+So we resume our search for bandit15 password and, I decided to read again the referenced link in the page because I thought again “Hey, one or two more knowledge de...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Bandit OverTheWire Writeup, Bandit13 &amp; Bandit14</title>
+    <link href="http://localhost:4000/posts/bandit-overthewire-bandit13-and-bandit14-writeup/" rel="alternate" type="text/html" title="Bandit OverTheWire Writeup, Bandit13 &amp;amp; Bandit14" />
     <published>2025-08-17T18:00:00+07:00</published>
   
     <updated>2025-08-17T18:00:00+07:00</updated>
@@ -63,7 +98,7 @@ Now I see why it’s more secure using the ...</summary>
     <link href="http://localhost:4000/posts/bandit-overthewire-bandit11-and-bandit12-writeup/" rel="alternate" type="text/html" title="Bandit OverTheWire Writeup, Bandit11 &amp;amp; Bandit12" />
     <published>2025-08-14T17:00:00+07:00</published>
   
-    <updated>2025-08-14T17:00:00+07:00</updated>
+    <updated>2025-08-17T18:27:46+07:00</updated>
   
     <id>http://localhost:4000/posts/bandit-overthewire-bandit11-and-bandit12-writeup/</id>
     <content type="text/html" src="http://localhost:4000/posts/bandit-overthewire-bandit11-and-bandit12-writeup/" />
@@ -167,38 +202,6 @@ Today we have level 7 and here we gonna learn something new again from this task
 Level 7 Task
 
 Now, we being tasked for finding password stored in txt file and that it located near the word millionth. Well, this is interesting, because for me, I have some cases IRL that when I needed to search some words but I just know the words surrounding it. So, let’s begin how I...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Bandit OverTheWire Writeup, Bandit6 &amp; Bandit7</title>
-    <link href="http://localhost:4000/posts/bandit-overthewire-bandit6-and-bandit7-writeup/" rel="alternate" type="text/html" title="Bandit OverTheWire Writeup, Bandit6 &amp;amp; Bandit7" />
-    <published>2025-08-11T15:55:00+07:00</published>
-  
-    <updated>2025-08-11T15:55:00+07:00</updated>
-  
-    <id>http://localhost:4000/posts/bandit-overthewire-bandit6-and-bandit7-writeup/</id>
-    <content type="text/html" src="http://localhost:4000/posts/bandit-overthewire-bandit6-and-bandit7-writeup/" />
-    <author>
-      <name>Kevin Alexander</name>
-    </author>
-
-  
-    
-    <category term="Linux" />
-    
-    <category term="Bandit OverTheWire" />
-    
-    <category term="Learning" />
-    
-  
-
-  <summary>New Series
-This is a new series where I go over how I learn linux by completing each level of challenge on OverTheWire, this being done by me because I still feels my Linux skill still shallow and needed improvement and enter Bandit OverTheWire. Shoutout to the OverTheWire team once again for this useful learning. Let’s get straight in to the writeup.
-
-Small Disclaimer
-Why did I start on level ...</summary>
 
   </entry>
 

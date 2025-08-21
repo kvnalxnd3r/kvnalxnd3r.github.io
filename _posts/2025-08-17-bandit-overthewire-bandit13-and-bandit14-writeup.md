@@ -1,6 +1,6 @@
 ---
-title: Bandit OverTheWire Writeup, Bandit11 & Bandit12
-date: 2025-08-17 18 :00 +0700
+title: Bandit OverTheWire Writeup, Bandit13 & Bandit14
+date: 2025-08-17 18:00 +0700
 categories: [Linux, Bandit OverTheWire, Learning]
 tags: [linux, linux command, learning, os, writeup]
 ---
@@ -60,8 +60,8 @@ So next step is to log out like picture below.
 
 ![Desktop View](assets/img/posts/2025-08-17-bandit-overthewire-bandit13-and-bandit14-writeup/bandit14-to-bandit15-third-step.png){: width="750"}
 
-After logged out, we then try the password previously obtained and connect back to `bandit14`. And I tried to use port `30000` like being told, but I got no response and I just terminate the process and try using port `2220`, as you can see, it worked like a charm.
+After logged out, we then try the password previously obtained and connect back to `bandit14`. And as you can see, it worked like a charm.
 
 ![Desktop View](assets/img/posts/2025-08-17-bandit-overthewire-bandit13-and-bandit14-writeup/bandit14-to-bandit15-fourth-step.png){: width="750"}
 
-And that's it for the challenge today, it mainly focusing on the SSH itself
+And that's it for the challenge today, it mainly focusing on the SSH itself, I know there's still more to this challenge but we'll resume it tomorrow to find `bandit15` password. Thank you again for spending your time reading this writeup.
